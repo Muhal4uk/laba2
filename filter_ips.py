@@ -26,7 +26,7 @@ def filter_ips(input_file_path, output_file_path, allowed_ips):
 
 
 if __name__ == "__main__":
-    allowed_ips = ['192.168.1.1', '10.0.0.1']
+    allowed_ips = ['71.212.224.97', '108.174.55.234']
     result = filter_ips("apache_logs.txt", "filtered_ips.txt", allowed_ips)
     print("Результати фільтрації IP-адрес:")
     for ip, count in result.items():
